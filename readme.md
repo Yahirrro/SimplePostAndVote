@@ -1,4 +1,4 @@
-#簡単に利用できる投票機能を持ったWeb投稿システム
+# 簡単に利用できる投票機能を持ったWeb投稿システム
 このPHPスクリプトは、Setup.phpを書き換え、DBを用意するだけで利用開始できます。
 This PHP script is easy to use. create 'setup.php'. done.
 
