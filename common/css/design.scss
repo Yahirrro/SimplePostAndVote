@@ -1,0 +1,157 @@
+body {
+  font-family: 'Noto Sans JP',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: url(https://morino.party/wp-content/themes/morinotheme/common/assets/firstbackground.jpg) center/cover no-repeat;
+}
+.background_color {
+  z-index: -2;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  bottom: 0;
+  background-color: #f0f0f0;
+}
+
+header.top {
+  background-color: #10c3b3;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  .g_logo {
+    position: absolute;
+    top: 0;
+    #logo {
+      width: 64px;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    h1 {
+      display: inline-block;
+      margin-bottom: 0;
+      color: white;
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+    h1:before {
+      content: '/';
+      padding-right: 10px;
+    }
+  }
+  .container.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+
+    color: white;
+
+    z-index: 1;
+
+    h1,p {
+      margin-bottom: 0;
+    }
+    h1 {
+      font-weight: 600;
+      svg {
+        margin-right: 30px;
+      }
+    }
+    p {
+      margin-top: 20px;
+      line-height: 2;
+      code {
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 10px;
+        color: #0ec3b3;
+      }
+    }
+  }
+  .user {
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+    width: 80%;
+    max-width: 500px;
+
+    z-index: -1;
+  }
+
+}
+section#about {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(255,255,255,0.8);
+}
+section#content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+article {
+  .tanzaku {
+    font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
+    -webkit-font-feature-settings: 'pkna';
+    font-feature-settings: 'pkna';
+    font-size: 17px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    background-color: white;
+    padding: 60px 20px 30px;
+    p {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      text-align: right;
+      img {
+        width: 50px;
+        padding-right: 7px;
+        margin-bottom: 10px;
+      }
+    }
+    h2 {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 0;
+      &.sub {
+        font-size: 1rem;
+      }
+    }
+  }
+  .good {
+    background-color: #0ec3b3;
+    padding: 10px;
+    color: white;
+    button {
+      color: white;
+      background: none;
+      border: none;
+    }
+    p {
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+  }
+  a,a:hover {
+    color: white;
+  }
+}
